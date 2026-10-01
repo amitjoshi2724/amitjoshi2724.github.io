@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Joshi | Turing Scholar, Algorithm Researcher & Game Developer</title>
+  <meta name="description" content="Personal portfolio and research showcase of Amit Joshi (@amitjoshi2724). UT Austin Turing Scholar, theoretical algorithms researcher, and creator of Spaceship Flight, Balloon World, and Cute 24 Game.">
+  <meta name="author" content="Amit Joshi">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://amitjoshi2724.github.io/">
+  <meta property="og:title" content="Amit Joshi | Turing Scholar, Algorithm Researcher & Game Developer">
+  <meta property="og:description" content="Explore theoretical algorithms research, live playable web arcade PWAs, and systems projects by Amit Joshi.">
+  <meta property="og:image" content="https://amitjoshi2724.github.io/avatar.png">
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#3b82f6">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow Orbs -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-link" aria-label="Amit Joshi Home">
+        <span class="brand-avatar-mini">
+          <img src="avatar.png" alt="Amit Joshi">
+        </span>
+        <span class="brand-text">Amit Joshi</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#games" class="nav-item">Games & PWAs</a>
+        <a href="#research" class="nav-item">Research & Theory</a>
+        <a href="#projects" class="nav-item">Projects & Tools</a>
+        <a href="#toolkit" class="nav-item">Toolkit</a>
+        <a href="#about" class="nav-item">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://github.com/amitjoshi2724" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile (@amitjoshi2724)">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+        <a href="https://devpost.com/amitjoshi2724" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="Devpost Profile">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.002 1.61L0 12.014 6.002 22.39h11.996L24 12.014 17.998 1.61H6.002zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-2.585 6.297-6.276 6.297H7.595V5.694zm3.086 2.576v7.456h1.22c2.404 0 3.593-1.27 3.593-3.728 0-2.43-1.189-3.728-3.593-3.728h-1.22z"/></svg>
+        </a>
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>UT Austin Turing Scholar • Computer Science & Mathematics</span>
+      </div>
+
+      <div class="hero-main-row">
+        <div class="hero-avatar-wrap">
+          <div class="avatar-ring">
+            <img src="avatar.png" alt="Amit Joshi Avatar" class="hero-avatar">
+          </div>
+          <div class="status-indicator" title="Open to Research Collaborations">
+            <span class="pulse-dot"></span> Online
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <h1 class="hero-name">Amit Joshi</h1>
+          <p class="hero-tagline">
+            Algorithm Theorist <span class="tag-divider">•</span> Game Developer <span class="tag-divider">•</span> AI Researcher
+          </p>
+          <p class="hero-description">
+            Independent computer science researcher and software craftsman based in Austin, TX. I bridge rigorous theoretical algorithms (MCMC coupling, sequence co-ranking, interval scheduling) with playful, buttery-smooth interactive web games and assistive accessibility software.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#games" class="btn btn-primary">
+              <span class="btn-icon">🎮</span> Play Live Games
+            </a>
+            <a href="#research" class="btn btn-secondary">
+              <span class="btn-icon">📜</span> Explore Research
+            </a>
+            <a href="https://github.com/amitjoshi2724" target="_blank" rel="noopener noreferrer" class="btn btn-tertiary">
+              <span class="btn-icon">⭐</span> GitHub Repos
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="hero-stats-strip">
+        <div class="stat-card">
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Open Source Repos</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">Turing Scholar</span>
+          <span class="stat-label">UT Austin CS Honors</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">TJHSST '18</span>
+          <span class="stat-label">#1 US STEM Magnet</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Offline PWAs Built</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Flagship Web Games & PWAs -->
+  <section class="section-container" id="games">
+    <div class="section-header">
+      <div class="section-pill">🕹️ PLAYABLE SHOWCASE</div>
+      <h2 class="section-title">Flagship Web Games & Offline PWAs</h2>
+      <p class="section-subtitle">
+        Every game below is built with pure Vanilla web technologies, features responsive physics, custom sound synthesis, and is 100% installable as an offline Progressive Web App.
+      </p>
+    </div>
+
+    <div class="cards-grid games-grid">
+      <!-- Game 1: Spaceship Flight -->
+      <article class="project-card featured-game-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-pwa">📱 Offline PWA</span>
+          <span class="card-badge badge-star">⭐ Flagship</span>
+        </div>
+        <h3 class="card-title">Spaceship Flight</h3>
+        <p class="card-description">
+          Retro arcade space dogfight simulator ported from Android. Features authentic 12-point oriented polygon collision against randomized asteroid morphologies, procedural Web Audio laser and thruster synthesizers, 3 energy management game modes (Dual Capacitors, Shared Reactor, Shield Charger), and continuous rotation physics.
+        </p>
+        <div class="tag-row">
+          <span class="tag">HTML5 Canvas</span>
+          <span class="tag">Web Audio API</span>
+          <span class="tag">12-Point Polygon Collision</span>
+          <span class="tag">Service Worker</span>
+          <span class="tag">PWA</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://amitjoshi2724.github.io/Spaceship-Flight/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            ▶ Play Spaceship Flight
+          </a>
+          <a href="https://github.com/amitjoshi2724/Spaceship-Flight" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub Repo
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 2: Balloon World -->
+      <article class="project-card featured-game-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-pwa">📱 Offline PWA</span>
+          <span class="card-badge badge-arcade">🎈 Arcade</span>
+        </div>
+        <h3 class="card-title">Balloon World</h3>
+        <p class="card-description">
+          Faithful recreation of a retro Java Swing arcade classic in a simulated 1990s desktop window. Engineered with calibrated 50°/second continuous rotation, cushioned 1.5° single-tap nudging, crosshair trigonometry, piercing darts, persistent high-scores leaderboard, and sound synthesizer settings (off by default).
+        </p>
+        <div class="tag-row">
+          <span class="tag">Retro Swing UI</span>
+          <span class="tag">Angle Smoothing</span>
+          <span class="tag">Web Audio SFX</span>
+          <span class="tag">PWA Offline</span>
+          <span class="tag">Vanilla JS</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://amitjoshi2724.github.io/balloon-world/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            ▶ Play Balloon World
+          </a>
+          <a href="https://github.com/amitjoshi2724/balloon-world" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub Repo
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 3: Cute 24 Game -->
+      <article class="project-card featured-game-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-pwa">📱 Offline PWA</span>
+          <span class="card-badge badge-math">🎴 Math Puzzle</span>
+        </div>
+        <h3 class="card-title">Cute 24 Game</h3>
+        <p class="card-description">
+          Pixel-perfect web recreation of the classic 24-point card game (~11 years in the making from Java Swing). Implements Dijkstra's Shunting-Yard expression evaluator with multiset card validation, classic JOptionPane dialogs, card click insertions, and victory sound fanfares.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Shunting-Yard Parser</span>
+          <span class="tag">Card Graphics</span>
+          <span class="tag">Arithmetic Logic</span>
+          <span class="tag">PWA Offline</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://amitjoshi2724.github.io/cute-24-game/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            ▶ Play 24 Game
+          </a>
+          <a href="https://github.com/amitjoshi2724/cute-24-game" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub Repo
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 4: Mastermind & Mastermindle -->
+      <article class="project-card featured-game-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-pwa">📱 Offline PWA</span>
+          <span class="card-badge badge-puzzle">🧠 Codebreaker</span>
+        </div>
+        <h3 class="card-title">Mastermind & Mastermindle</h3>
+        <p class="card-description">
+          Complete modern web implementation of the classic codebreaking board game. Includes an Unlimited Classic Mode and a daily Wordle/Semantle-style Mastermindle challenge powered by a date-seeded deterministic PRNG with complete past puzzle archives and shareable emoji grids.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Daily PRNG Engine</span>
+          <span class="tag">Archive Explorer</span>
+          <span class="tag">PWA Offline</span>
+          <span class="tag">Combinatorics</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://amitjoshi2724.github.io/mastermind/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            ▶ Play Mastermind
+          </a>
+          <a href="https://github.com/amitjoshi24/Mastermind" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub Repo
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 5: Phylogenle -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-bio">🧬 Bio-Informatics</span>
+        </div>
+        <h3 class="card-title">Phylogenle</h3>
+        <p class="card-description">
+          Wordle variant where players guess target organisms based on taxonomic cladistics and evolutionary phylogenetic distance across the tree of life.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">Phylogenetics</span>
+          <span class="tag">Evolutionary Trees</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/amitjoshi2724/phylogenle" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 6: Adversarial Hangman -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-ai">🤖 Game Theory</span>
+        </div>
+        <h3 class="card-title">Adversarial Hangman</h3>
+        <p class="card-description">
+          An adaptive AI hangman engine that uses minimax partitioning over the English lexicon to delay revealing the word family, dynamically dodging player guesses until mathematically forced.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Game Theory</span>
+          <span class="tag">Minimax Partitioning</span>
+          <span class="tag">Python</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/amitjoshi2724/adversarial-hangman" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Game 7: Candy Breaker -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-arcade">🍬 Arcade</span>
+        </div>
+        <h3 class="card-title">Candy Breaker</h3>
+        <p class="card-description">
+          Vibrant candy-themed brick-breaker web game featuring sweet confectionery brick aesthetics, collision trajectories, and particle power-ups.
+        </p>
+        <div class="tag-row">
+          <span class="tag">HTML5 Canvas</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Brickbreaker</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/amitjoshi2724/candy-breaker" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 View on GitHub
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 2: Theoretical Algorithms & Research -->
+  <section class="section-container" id="research">
+    <div class="section-header">
+      <div class="section-pill">📐 THEORETICAL COMPUTER SCIENCE</div>
+      <h2 class="section-title">Algorithms & Research Papers</h2>
+      <p class="section-subtitle">
+        Investigating novel discrete data structures, asymptotic optimizations, and Markov Chain Monte Carlo randomized couplings.
+      </p>
+    </div>
+
+    <div class="research-list">
+      <!-- Paper 1 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Paper / TeX</span>
+          <span class="research-status">Algorithm Research</span>
+        </div>
+        <h3 class="research-title">Multi-Way Co-Ranking</h3>
+        <p class="research-subtitle">Merge-Free Index-Space Partitioning of Sorted Sequences by Global Rank</p>
+        <p class="research-abstract">
+          Develops a merge-free index-space partitioning algorithm for sorted sequences, enabling optimal multi-way co-ranking without paying unnecessary memory overhead or full sorting passes across multiple streaming arrays.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Co-Ranking</span>
+          <span class="tag">Index-Space Partitioning</span>
+          <span class="tag">Theoretical CS</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/multi-way-co-ranking" target="_blank" rel="noopener noreferrer" class="research-link">
+          Read Manuscript on GitHub →
+        </a>
+      </div>
+
+      <!-- Paper 2 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Paper / Algorithm</span>
+          <span class="research-status">Optimization</span>
+        </div>
+        <h3 class="research-title">Global Predecessor Indexing (GPI)</h3>
+        <p class="research-subtitle">Avoiding Binary Search in Weighted Job Scheduling</p>
+        <p class="research-abstract">
+          Investigates elimination of the traditional O(log n) binary search predecessor lookups in weighted interval and job scheduling via continuous Global Predecessor Indexing, pushing scheduling complexity closer to true linear bounds.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Job Scheduling</span>
+          <span class="tag">Dynamic Programming</span>
+          <span class="tag">Predecessor Structures</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/gpi-job-scheduling" target="_blank" rel="noopener noreferrer" class="research-link">
+          View Repository & Benchmarks →
+        </a>
+      </div>
+
+      <!-- Paper 3 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Honors Thesis</span>
+          <span class="research-status">UT Austin Turing Scholars</span>
+        </div>
+        <h3 class="research-title">Randomizing Maximum Matchings in Lopsided Bipartite Graphs</h3>
+        <p class="research-subtitle">Markov Chain Monte Carlo (MCMC) Coupling Analysis</p>
+        <p class="research-abstract">
+          Undergraduate Turing Scholars thesis supervised at UT Austin. Explores randomized algorithms and mixing times of MCMC coupling chains when sampling uniform maximum matchings over asymmetric bipartite graphs.
+        </p>
+        <div class="tag-row">
+          <span class="tag">MCMC Coupling</span>
+          <span class="tag">Bipartite Graphs</span>
+          <span class="tag">Randomized Algorithms</span>
+          <span class="tag">Turing Thesis</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/randomizing-maximum-bipartite-matchings" target="_blank" rel="noopener noreferrer" class="research-link">
+          Explore Turing Thesis Repo →
+        </a>
+      </div>
+
+      <!-- Paper 4 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Data Structures</span>
+          <span class="research-status">Novel Primitive</span>
+        </div>
+        <h3 class="research-title">Cascade Grid Linked List</h3>
+        <p class="research-subtitle">A 2D Linked List with a Cascading Invariant</p>
+        <p class="research-abstract">
+          Formulates a two-dimensional grid linked list that enforces an invariant propagation structure across adjacent orthogonal nodes, guaranteeing bounded path searches and rapid multi-layer pointer updates.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Data Structures</span>
+          <span class="tag">Planar Graphs</span>
+          <span class="tag">Invariants</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/cascade-grid-linked-list" target="_blank" rel="noopener noreferrer" class="research-link">
+          View Specification on GitHub →
+        </a>
+      </div>
+
+      <!-- Paper 5 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Robot Learning / AI</span>
+          <span class="research-status">UT Austin Robotics</span>
+        </div>
+        <h3 class="research-title">Combining Selfish Individual Rewards With Intrinsic Motivation</h3>
+        <p class="research-subtitle">Synergistic Multi-Agent Coordination on robosuite</p>
+        <p class="research-abstract">
+          Robot Learning project with Gunjan Bhattarai evaluating curiosity-driven intrinsic exploration models coupled with selfish agent incentives in collaborative physical robotic manipulation environments.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Reinforcement Learning</span>
+          <span class="tag">robosuite</span>
+          <span class="tag">Intrinsic Motivation</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/selfish-rewards-with-intrinsic-motivation" target="_blank" rel="noopener noreferrer" class="research-link">
+          Explore Robot Learning Code →
+        </a>
+      </div>
+
+      <!-- Paper 6 -->
+      <div class="research-card">
+        <div class="research-meta">
+          <span class="research-tag">Computer Vision / Accessibility</span>
+          <span class="research-status">74.4% Accuracy</span>
+        </div>
+        <h3 class="research-title">Real-Time ASL Fingerspelling Video Recognition</h3>
+        <p class="research-subtitle">MiCT-RANet Architecture on ChicagoFSWild+</p>
+        <p class="research-abstract">
+          End-to-end spatiotemporal fingerspelling recognition system combining Mixed 3D/2D Convolutions with Recurrent Attention Networks, achieving 74.4% letter accuracy on unconstrained deaf signer videos.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Computer Vision</span>
+          <span class="tag">ASL Fingerspelling</span>
+          <span class="tag">Deep Learning</span>
+        </div>
+        <a href="https://github.com/amitjoshi2724/MiCT-RANet-ASL-FingerSpelling" target="_blank" rel="noopener noreferrer" class="research-link">
+          View Model & Notebooks →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Applied Projects & Accessibility Tools -->
+  <section class="section-container" id="projects">
+    <div class="section-header">
+      <div class="section-pill">🛠️ APPLIED ENGINEERING</div>
+      <h2 class="section-title">Projects, Tools & Hackathons</h2>
+      <p class="section-subtitle">
+        Hands-free assistive technology, image processing utilities, computer graphics simulators, and award-winning hackathon submissions.
+      </p>
+    </div>
+
+    <div class="cards-grid">
+      <!-- Tool 1: Image Padder -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-pwa">📱 Web PWA</span>
+          <span class="card-badge badge-util">🖼️ Tool</span>
+        </div>
+        <h3 class="card-title">Image & Video Padder</h3>
+        <p class="card-description">
+          A high-performance aspect ratio padding utility for creators. Pad media to any aspect ratio (16:9, 4:3, 1:1) with custom background colors, alpha transparency, batch processing, and offline PWA functionality. Includes Python CLI & GUI for gigapixel files.
+        </p>
+        <div class="tag-row">
+          <span class="tag">PWA</span>
+          <span class="tag">Canvas</span>
+          <span class="tag">Python Pillow</span>
+          <span class="tag">Batch Processing</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://amitjoshi2724.github.io/ImagePadder/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            🌐 Open Tool
+          </a>
+          <a href="https://github.com/amitjoshi24/ImagePadder" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Tool 2: Eyetracker for Mouse -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-access">♿ Accessibility</span>
+          <span class="card-badge badge-cv">👁️ CV</span>
+        </div>
+        <h3 class="card-title">Eyetracker for Mouse</h3>
+        <p class="card-description">
+          Assistive computer vision software that empowers users with motor disabilities to navigate their operating system's mouse cursor using only ocular gaze and eyebrow gestures via standard consumer webcams.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Python</span>
+          <span class="tag">OpenCV</span>
+          <span class="tag">Facial Landmarks</span>
+          <span class="tag">Accessibility</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://devpost.com/software/eyetracker-for-mouse" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            🏆 Devpost
+          </a>
+          <a href="https://github.com/amitjoshi2724/eyetrackermouse" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Tool 3: NoUltraWideCamera -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-ios">🍏 iOS App</span>
+          <span class="card-badge badge-privacy">🛡️ Privacy</span>
+        </div>
+        <h3 class="card-title">NoUltraWideCamera</h3>
+        <p class="card-description">
+          Native Swift camera application designed to prevent strangers from capturing unauthorized 0.5x ultra-wide candid photos of individuals in public settings.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Swift</span>
+          <span class="tag">AVFoundation</span>
+          <span class="tag">iOS Camera API</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/amitjoshi2724/NoUltraWideCamera" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Tool 4: Voyage 3D Graphics -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-graphics">✨ OpenGL / C++</span>
+        </div>
+        <h3 class="card-title">Voyage</h3>
+        <p class="card-description">
+          Interactive 3D rasterized graphics engine displaying moving fluid dynamics, water surface meshing, boat buoyancy, rasterized shadow mapping, and caustic light refraction shaders in modern OpenGL.
+        </p>
+        <div class="tag-row">
+          <span class="tag">C++</span>
+          <span class="tag">OpenGL</span>
+          <span class="tag">Caustics Shaders</span>
+          <span class="tag">Fluid Simulation</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://github.com/amitjoshi2724/Voyage" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 View on GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Tool 5: I Need Some Space -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-hack">🚀 HackTX 2018</span>
+        </div>
+        <h3 class="card-title">I Need Some Space (ISS Extension)</h3>
+        <p class="card-description">
+          A space-themed new tab Chrome extension integrating real-time telemetry from the International Space Station, live orbital streaming video, and NASA's daily high-resolution astronomy archive.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Chrome Extension</span>
+          <span class="tag">NASA API</span>
+          <span class="tag">ISS Live Stream</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://devpost.com/software/iss-extension" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            🏆 Devpost
+          </a>
+          <a href="https://github.com/amitjoshi2724/iss-extension" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub
+          </a>
+        </div>
+      </article>
+
+      <!-- Tool 6: Confidant -->
+      <article class="project-card">
+        <div class="card-badge-row">
+          <span class="card-badge badge-hack">🎤 HackTX 2019</span>
+        </div>
+        <h3 class="card-title">Confidant</h3>
+        <p class="card-description">
+          Speech coaching tool analyzing real-time video feeds for eye contact frequency, attention duration, and linguistic response cohesion to help individuals prepare for public interviews.
+        </p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">WebRTC</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Eye Contact AI</span>
+        </div>
+        <div class="card-footer">
+          <a href="https://devpost.com/software/confidant-1tj08x" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-play">
+            🏆 Devpost
+          </a>
+          <a href="https://github.com/amitjoshi2724/confidant" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
+            📁 GitHub
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Section 4: Technical Toolkit -->
+  <section class="section-container" id="toolkit">
+    <div class="section-header">
+      <div class="section-pill">⚡ SKILLS MATRIX</div>
+      <h2 class="section-title">Technical Toolkit</h2>
+      <p class="section-subtitle">
+        Languages, algorithmic proficiencies, frameworks, and scientific environments.
+      </p>
+    </div>
+
+    <div class="toolkit-grid">
+      <div class="toolkit-category">
+        <h3 class="category-header">💻 Programming Languages</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Python</span>
+          <span class="toolkit-pill">C / C++</span>
+          <span class="toolkit-pill">Java</span>
+          <span class="toolkit-pill">JavaScript (ES6+)</span>
+          <span class="toolkit-pill">Swift</span>
+          <span class="toolkit-pill">LaTeX</span>
+          <span class="toolkit-pill">HTML5 / CSS3</span>
+          <span class="toolkit-pill">SQL</span>
+        </div>
+      </div>
+
+      <div class="toolkit-category">
+        <h3 class="category-header">📐 Algorithms & Theory</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Approximation Algorithms</span>
+          <span class="toolkit-pill">Markov Chain Monte Carlo</span>
+          <span class="toolkit-pill">Dynamic Programming</span>
+          <span class="toolkit-pill">Bipartite Matchings</span>
+          <span class="toolkit-pill">Sequence Co-Ranking</span>
+          <span class="toolkit-pill">Interval Scheduling</span>
+          <span class="toolkit-pill">Combinatorics</span>
+        </div>
+      </div>
+
+      <div class="toolkit-category">
+        <h3 class="category-header">🤖 AI, Robotics & Vision</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">PyTorch</span>
+          <span class="toolkit-pill">Reinforcement Learning</span>
+          <span class="toolkit-pill">robosuite</span>
+          <span class="toolkit-pill">Computer Vision</span>
+          <span class="toolkit-pill">ASL Recognition</span>
+          <span class="toolkit-pill">NLP & DrQA</span>
+          <span class="toolkit-pill">Q-Learning</span>
+        </div>
+      </div>
+
+      <div class="toolkit-category">
+        <h3 class="category-header">🌐 Web Platforms & Systems</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Progressive Web Apps (PWA)</span>
+          <span class="toolkit-pill">Service Workers API</span>
+          <span class="toolkit-pill">Web Audio Synthesizers</span>
+          <span class="toolkit-pill">HTML5 Canvas 2D</span>
+          <span class="toolkit-pill">OpenGL / Shaders</span>
+          <span class="toolkit-pill">Git / GitHub Pages</span>
+          <span class="toolkit-pill">ARM Emulator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: About & Academic Background -->
+  <section class="section-container" id="about">
+    <div class="section-header">
+      <div class="section-pill">🎓 ACADEMIC BACKGROUND</div>
+      <h2 class="section-title">Education & Journey</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🐂</div>
+        <div class="about-content">
+          <h3 class="about-title">The University of Texas at Austin</h3>
+          <p class="about-degree">Master of Science (MS) & Bachelor of Science (BS)</p>
+          <p class="about-major">Computer Science (<strong>Turing Scholars Honors Program</strong>) & Mathematics</p>
+          <p class="about-description">
+            Turing Scholars is UT Austin's most selective computer science honors community. Completed undergraduate thesis on <em>Randomizing Maximum Matchings in Lopsided Bipartite Graphs Using MCMC Coupling</em>. Coursework in Advanced Algorithms, Robot Learning, Deep Learning, Operating Systems, and Abstract Algebra.
+          </p>
+        </div>
+      </div>
+
+      <div class="about-card">
+        <div class="about-icon">🏛️</div>
+        <div class="about-content">
+          <h3 class="about-title">Thomas Jefferson High School for Science & Technology</h3>
+          <p class="about-degree">Class of 2018 (TJHSST)</p>
+          <p class="about-major">Governor's School for Science & Technology, Alexandria VA</p>
+          <p class="about-description">
+            Consistently recognized as the premier STEM magnet high school in the United States. Conducted Senior Research Project on <em>Digital Steganography</em> and competed actively in competitive programming and hackathons.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-name">Amit Joshi</span>
+          <p class="footer-bio">Turing Scholar • Independent CS Research • Interactive Web Engineering</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/amitjoshi2724" target="_blank" rel="noopener noreferrer">GitHub (@amitjoshi2724)</a>
+          <a href="https://devpost.com/amitjoshi2724" target="_blank" rel="noopener noreferrer">Devpost Profile</a>
+          <button type="button" class="copy-email-btn" id="copy-email-btn" data-email="amit2724joshi@gmail.com">
+            <span>📋 Copy Email</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Amit Joshi. Crafted with Vanilla HTML5, CSS3, & JavaScript. Hosted with GitHub Pages.</p>
+        <p class="footer-repo-link">
+          <a href="https://github.com/amitjoshi2724/amitjoshi2724.github.io" target="_blank" rel="noopener noreferrer">View Portfolio Source on GitHub</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
