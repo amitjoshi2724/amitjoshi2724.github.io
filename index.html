@@ -22,6 +22,7 @@
   <link rel="apple-touch-icon" href="icon-192.png">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#0f172a">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
@@ -33,21 +34,23 @@
 <body>
   <!-- Header / Navigation -->
   <header class="site-header" id="navbar">
-    <div class="header-container">
-      <a href="#" class="logo-link">
-        <span class="logo-terminal">&gt;</span>
-        <span class="logo-text">amitjoshi<span class="logo-accent">.dev</span></span>
+    <div class="nav-container">
+      <a href="#" class="brand-link" aria-label="Amit Joshi Home">
+        <span class="brand-avatar-mini">
+          <img src="avatar.png" alt="Amit Joshi">
+        </span>
+        <span class="brand-text">amitjoshi<span class="logo-accent">.dev</span></span>
       </a>
 
       <nav class="nav-menu" id="nav-menu">
-        <a href="#games" class="nav-link">Arcade & PWAs</a>
-        <a href="#research" class="nav-link">Research</a>
-        <a href="#projects" class="nav-link">Applied Tools</a>
-        <a href="#toolkit" class="nav-link">Skills</a>
-        <a href="#about" class="nav-link">Education</a>
+        <a href="#games" class="nav-item">Arcade & PWAs</a>
+        <a href="#research" class="nav-item">Research</a>
+        <a href="#projects" class="nav-item">Applied Tools</a>
+        <a href="#toolkit" class="nav-item">Skills</a>
+        <a href="#about" class="nav-item">Education</a>
       </nav>
 
-      <div class="header-actions">
+      <div class="nav-actions">
         <a href="https://github.com/amitjoshi2724" target="_blank" rel="noopener noreferrer" class="social-icon-btn" title="GitHub Profile (@amitjoshi2724)">
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
         </a>
@@ -333,7 +336,7 @@
       </p>
     </div>
 
-    <div class="research-grid">
+    <div class="research-list">
       <!-- Paper 1 -->
       <div class="research-card">
         <div class="research-meta">
@@ -502,7 +505,7 @@
             🌐 Open ElementSpeller
           </a>
           <a href="https://github.com/amitjoshi2724/ElementSpeller" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-repo">
-            📁 GitHub
+            📁 GitHub Repo
           </a>
         </div>
       </article>
@@ -638,55 +641,55 @@
       </p>
     </div>
 
-    <div class="skills-grid">
-      <div class="skill-category-card">
-        <h3 class="skill-category-title">Core Languages</h3>
-        <div class="skill-chips-wrap">
-          <span class="skill-chip">Python</span>
-          <span class="skill-chip">JavaScript (ES6+)</span>
-          <span class="skill-chip">Java</span>
-          <span class="skill-chip">C / C++</span>
-          <span class="skill-chip">Swift</span>
-          <span class="skill-chip">HTML5 / CSS3</span>
-          <span class="skill-chip">SQL</span>
-          <span class="skill-chip">Bash / Zsh</span>
+    <div class="toolkit-grid">
+      <div class="toolkit-category">
+        <h3 class="category-header">Core Languages</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Python</span>
+          <span class="toolkit-pill">JavaScript (ES6+)</span>
+          <span class="toolkit-pill">Java</span>
+          <span class="toolkit-pill">C / C++</span>
+          <span class="toolkit-pill">Swift</span>
+          <span class="toolkit-pill">HTML5 / CSS3</span>
+          <span class="toolkit-pill">SQL</span>
+          <span class="toolkit-pill">Bash / Zsh</span>
         </div>
       </div>
 
-      <div class="skill-category-card">
-        <h3 class="skill-category-title">Theoretical CS & Math</h3>
-        <div class="skill-chips-wrap">
-          <span class="skill-chip">Randomized Algorithms</span>
-          <span class="skill-chip">Markov Chains & MCMC</span>
-          <span class="skill-chip">Approximation Algorithms</span>
-          <span class="skill-chip">Graph Theory</span>
-          <span class="skill-chip">Combinatorics</span>
-          <span class="skill-chip">Discrete Optimization</span>
-          <span class="skill-chip">Abstract Algebra</span>
+      <div class="toolkit-category">
+        <h3 class="category-header">Theoretical CS & Math</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Randomized Algorithms</span>
+          <span class="toolkit-pill">Markov Chains & MCMC</span>
+          <span class="toolkit-pill">Approximation Algorithms</span>
+          <span class="toolkit-pill">Graph Theory</span>
+          <span class="toolkit-pill">Combinatorics</span>
+          <span class="toolkit-pill">Discrete Optimization</span>
+          <span class="toolkit-pill">Abstract Algebra</span>
         </div>
       </div>
 
-      <div class="skill-category-card">
-        <h3 class="skill-category-title">Interactive & Systems</h3>
-        <div class="skill-chips-wrap">
-          <span class="skill-chip">Progressive Web Apps (PWA)</span>
-          <span class="skill-chip">Service Workers & Caching</span>
-          <span class="skill-chip">HTML5 Canvas Graphics</span>
-          <span class="skill-chip">Web Audio API Synthesis</span>
-          <span class="skill-chip">OpenGL & Shaders</span>
-          <span class="skill-chip">POSIX / Linux Systems</span>
+      <div class="toolkit-category">
+        <h3 class="category-header">Interactive & Systems</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">Progressive Web Apps (PWA)</span>
+          <span class="toolkit-pill">Service Workers & Caching</span>
+          <span class="toolkit-pill">HTML5 Canvas Graphics</span>
+          <span class="toolkit-pill">Web Audio API Synthesis</span>
+          <span class="toolkit-pill">OpenGL & Shaders</span>
+          <span class="toolkit-pill">POSIX / Linux Systems</span>
         </div>
       </div>
 
-      <div class="skill-category-card">
-        <h3 class="skill-category-title">AI & Vision</h3>
-        <div class="skill-chips-wrap">
-          <span class="skill-chip">PyTorch</span>
-          <span class="skill-chip">OpenCV</span>
-          <span class="skill-chip">Robot Learning (Robosuite)</span>
-          <span class="skill-chip">Reinforcement Learning</span>
-          <span class="skill-chip">NLP & Transformers</span>
-          <span class="skill-chip">Computer Vision</span>
+      <div class="toolkit-category">
+        <h3 class="category-header">AI & Vision</h3>
+        <div class="pill-group">
+          <span class="toolkit-pill">PyTorch</span>
+          <span class="toolkit-pill">OpenCV</span>
+          <span class="toolkit-pill">Robot Learning (Robosuite)</span>
+          <span class="toolkit-pill">Reinforcement Learning</span>
+          <span class="toolkit-pill">NLP & Transformers</span>
+          <span class="toolkit-pill">Computer Vision</span>
         </div>
       </div>
     </div>
