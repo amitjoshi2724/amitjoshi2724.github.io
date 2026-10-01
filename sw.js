@@ -3,7 +3,7 @@
  * Pre-caches portfolio assets for offline viewing.
  */
 
-const CACHE_NAME = 'amit-portfolio-v1.0.0';
+const CACHE_NAME = 'amit-portfolio-v1.0.1';
 const CORE_ASSETS = [
   './',
   './index.html',
