@@ -1125,3 +1125,32 @@ body {
   line-height: 1;
   font-size: 15px;
 }
+
+/* Resume link styling */
+.resume-nav-link {
+  color: #a855f7 !important;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.resume-nav-link:hover {
+  color: #c084fc !important;
+}
+
+.btn-resume {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(168, 85, 247, 0.3) 100%);
+  border: 1px solid rgba(168, 85, 247, 0.6);
+  color: #f8fafc;
+  box-shadow: 0 4px 14px rgba(168, 85, 247, 0.25);
+  font-weight: 600;
+}
+
+.btn-resume:hover {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.45) 0%, rgba(168, 85, 247, 0.5) 100%);
+  border-color: #c084fc;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.4);
+}

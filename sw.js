@@ -3,7 +3,7 @@
  * Pre-caches portfolio assets for offline viewing.
  */
 
-const CACHE_NAME = 'amit-portfolio-v1.0.3';
+const CACHE_NAME = 'amit-portfolio-v1.0.5';
 const CORE_ASSETS = [
   './',
   './index.html',
@@ -13,7 +13,8 @@ const CORE_ASSETS = [
   './avatar.png',
   './favicon.png',
   './icon-192.png',
-  './icon-512.png'
+  './icon-512.png',
+  './resume.pdf'
 ];
 
 self.addEventListener('install', (event) => {
